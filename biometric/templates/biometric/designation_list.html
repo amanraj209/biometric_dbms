@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Designation</h3>
+
+    {% for desig in designation_list %}
+        <p>{{desig}}</p>
+    {% endfor %}
+
+{% endblock %}

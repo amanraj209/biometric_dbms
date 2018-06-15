@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Administrator</h3>
+
+    <ul>
+    {% for admin in administrator_list %}
+        <li><a href="{% url 'biometric:administrator_detail' username=admin.username %}">{{admin}}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

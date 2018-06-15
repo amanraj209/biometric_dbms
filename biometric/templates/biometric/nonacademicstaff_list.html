@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Non Academic Staff</h3>
+
+    <ul>
+    {% for staff in nonacademicstaff_list %}
+        <li><a href="{% url 'biometric:staff_detail' staff_id=staff.staff_id %}">{{staff.staff_name}}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

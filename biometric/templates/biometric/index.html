@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Biometric Database</h3>
+
+<ul>
+    <li><a href="{% url 'biometric:staff_list'%}">Non Academic Staff</a></li>
+    <li><a href="{% url 'biometric:administrator_list'%}">Administrator</a></li>
+    <li><a href="{% url 'biometric:attendance_list'%}">Attendance Station</a></li>
+    <li><a href="{% url 'biometric:department_list'%}">Department</a></li>
+    <li><a href="{% url 'biometric:designation_list'%}">Designation</a></li>
+    <li><a href="{% url 'biometric:fingerprint_list'%}">Fingerprint</a></li>
+    <li><a href="{% url 'biometric:server_list'%}">Server</a></li>
+</ul>
+    
+{% endblock %}

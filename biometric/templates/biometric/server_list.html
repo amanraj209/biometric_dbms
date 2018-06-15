@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Staff Report</h3>
+
+    {% for staff in server_list %}
+        <p>{{staff}}</p>
+    {% endfor %}
+
+{% endblock %}

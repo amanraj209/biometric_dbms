@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Department</h3>
+
+    {% for depart in department_list %}
+        <p>{{depart}}</p>
+    {% endfor %}
+
+{% endblock %}

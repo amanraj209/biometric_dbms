@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    {% for item in attendancestation %}
+    Staff ID: {{item.staff_id.staff_id}}<br>
+    Staff Name: {{item.staff_id.staff_name}}<br>
+    No. of hours worked: {{item.num_hours}}<br>
+    Attendance Time: {{item.attendance_date_time}}<br>
+    Address: {{item.staff_id.address}}<br>
+    Phone No.: {{item.staff_id.phone_no}}<br>
+    Enrolment Date: {{item.staff_id.enrolment_date}}<br><br><br>
+    {% endfor %}
+
+{% endblock %}

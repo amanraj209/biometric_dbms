@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Fingerprint</h3>
+
+    {% for fingerprint in fingerprint_list %}
+        <p>{{fingerprint}}</p>
+    {% endfor %}
+
+{% endblock %}

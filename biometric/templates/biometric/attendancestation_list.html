@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <h3>Attendance Station</h3>
+
+    <ul>
+    {% for attendance in attendancestation_list %}
+        <li><a href="{% url 'biometric:attendance_detail' staff_id=attendance.staff_id_id %}">{{attendance.staff_id.staff_name}}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
